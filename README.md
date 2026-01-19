@@ -23,15 +23,13 @@ git clone https://github.com/creativeluziana/blackbat-website.git
 cd blackbat-website
 
 ### 2. Install dependencies
-```bash
 npm install
 
 
 ### 3. Start the development server
-```bash
 npm run dev
 
 ### 3. Open your browser and visit
-```bash
+
 http://localhost:5173
 
