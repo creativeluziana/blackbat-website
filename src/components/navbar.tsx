@@ -12,21 +12,38 @@ export default function Navbar() {
               fill="currentColor"
               className="w-5 h-5"
             >
-              <path fillRule="evenodd" d="M3 6a3 3 0 013-3h2.25a3 3 0 013 3v2.25a3 3 0 01-3 3H6a3 3 0 01-3-3V6zm9.75 0a3 3 0 013-3H18a3 3 0 013 3v2.25a3 3 0 01-3 3h-2.25a3 3 0 01-3-3V6zM3 15.75a3 3 0 013-3h2.25a3 3 0 013 3V18a3 3 0 01-3 3H6a3 3 0 01-3-3v-2.25zm9.75 0a3 3 0 013-3H18a3 3 0 013 3V18a3 3 0 01-3 3h-2.25a3 3 0 01-3-3v-2.25z" clipRule="evenodd" />
+              <path
+                fillRule="evenodd"
+                d="M3 6a3 3 0 013-3h2.25a3 3 0 013 3v2.25a3 3 0 01-3 3H6a3 3 0 01-3-3V6zm9.75 0a3 3 0 013-3H18a3 3 0 013 3v2.25a3 3 0 01-3 3h-2.25a3 3 0 01-3-3V6zM3 15.75a3 3 0 013-3h2.25a3 3 0 013 3V18a3 3 0 01-3 3H6a3 3 0 01-3-3v-2.25zm9.75 0a3 3 0 013-3H18a3 3 0 013 3V18a3 3 0 01-3 3h-2.25a3 3 0 01-3-3v-2.25z"
+                clipRule="evenodd"
+              />
             </svg>
           </div>
           blackbox.ai
         </div>
 
+        {/* Navigation Links */}
         <ul className="hidden gap-8 text-[15px] font-medium text-slate-600 md:flex">
-          <li className="hover:text-blue-600 cursor-pointer transition-colors">Product</li>
-          <li className="hover:text-blue-600 cursor-pointer transition-colors">Pricing</li>
-          <li className="hover:text-blue-600 cursor-pointer transition-colors">Resources</li>
-          <li className="hover:text-blue-600 cursor-pointer transition-colors">Blogs</li>
+          <li className="cursor-pointer transition-colors hover:text-blue-600">
+            Home
+          </li>
+          <li className="cursor-pointer transition-colors hover:text-blue-600">
+            About Us
+          </li>
+          <li className="cursor-pointer transition-colors hover:text-blue-600">
+            Solution
+          </li>
+          <li className="cursor-pointer transition-colors hover:text-blue-600">
+            Pricing
+          </li>
+          <li className="cursor-pointer transition-colors hover:text-blue-600">
+            Contact
+          </li>
         </ul>
 
-        <button className="rounded-full bg-blue-600 px-6 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 hover:bg-blue-700 transition-all hover:shadow-blue-600/30">
-          Get started
+        {/* CTA Button */}
+        <button className="rounded-full bg-blue-600 px-6 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition-all hover:bg-blue-700 hover:shadow-blue-600/30">
+          Get Demo
         </button>
       </div>
     </nav>
