@@ -41,7 +41,7 @@ export default function Navbar() {
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-600 text-white shadow-md">
             B
           </div>
-          blackbox.ai
+          blackbot.ai
         </Link>
 
         {/* Desktop Nav */}
