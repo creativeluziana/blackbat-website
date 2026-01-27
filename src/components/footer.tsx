@@ -3,8 +3,6 @@ import {
   Instagram,
   Linkedin,
   Twitter,
-  Phone,
-  MapPin,
 } from "lucide-react"
 
 export default function Footer() {
