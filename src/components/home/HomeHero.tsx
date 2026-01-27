@@ -5,7 +5,7 @@ export default function HomeHero() {
   return (
     <>
       {/* HERO SECTION */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-[#eaf2ff] via-[#f2f7ff] to-white pt-28 pb-0">
+      <section className="relative overflow-hidden bg-gradient-to-b from-[#eaf2ff] via-[#f5f8ff] to-white pt-24 md:pt-32 pb-20">
 
         {/* DOT GRID */}
         <div className="absolute inset-0 bg-[radial-gradient(circle,_rgba(59,130,246,0.08)_1px,_transparent_1px)] bg-[size:24px_24px] opacity-60" />
@@ -13,55 +13,128 @@ export default function HomeHero() {
         {/* BACKGROUND MISTS */}
         <div className="absolute top-20 -left-32 h-[600px] w-[600px] rounded-full bg-blue-400/30 blur-[120px]" />
         <div className="absolute bottom-20 -right-32 h-[700px] w-[700px] rounded-full bg-blue-300/25 blur-[140px]" />
-        <div className="absolute top-1/3 right-1/4 h-[500px] w-[500px] rounded-full bg-indigo-200/20 blur-[100px]" />
 
         {/* CONTENT */}
-        <div className="relative mx-auto max-w-7xl text-center px-6 z-10">
+        <div className="relative mx-auto max-w-7xl px-6 z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-14 md:gap-16">
 
-          {/* ONE-LINE HEADING (SMALLER) */}
-          <h1
-            className="
-              font-semibold tracking-tight text-slate-800
-              leading-[1.05]
-              text-[2.1rem]
-              sm:text-[2.6rem]
-              md:text-[3.2rem]
-              lg:text-[3.7rem]
-              xl:text-[4.1rem]
-              whitespace-nowrap
-            "
-          >
-            One Platform,{" "}
-            <span className="text-[#9fb3d0]">Infinite</span>{" "}
-            <span className="text-slate-800">Possibilities.</span>
-          </h1>
+            {/* RIGHT IMAGE — FIRST ON MOBILE */}
+            <div className="order-1 lg:order-2 relative flex justify-center lg:justify-end">
 
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-500 font-medium">
-            India's most comprehensive AI-powered ERP ecosystem.
-            10+ industry-specific solutions designed to transform your business
-            operations from day one.
-          </p>
+              {/* FLOATING NOTIFICATION CARD */}
+              <div className="
+                absolute
+                -bottom-8
+                -left-6
+                z-20
+                flex items-center gap-4
+                rounded-2xl
+                bg-white
+                px-5 py-4
+                shadow-2xl
+                border border-slate-200
+              ">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-green-100">
+                  <svg
+                    className="h-5 w-5 text-green-600"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
 
-          {/* CTA */}
-          <div className="mt-10 flex items-center justify-center gap-6">
-            <button className="rounded-full bg-blue-600 px-8 py-3 text-[15px] font-semibold text-white shadow-xl shadow-blue-600/20 hover:bg-blue-700 transition-all hover:shadow-blue-600/30">
-              Get started
-            </button>
-            <button className="rounded-full border border-slate-600 px-8 py-3 text-[15px] font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-all">
-              Contact sales
-            </button>
-          </div>
-        </div>
+                <div>
+                  <p className="text-sm font-semibold text-slate-800">
+                    New Order Received
+                  </p>
+                  <p className="text-sm text-blue-600">
+                    ₹45,000 from Retail Store
+                  </p>
+                </div>
+              </div>
 
-        {/* IMAGE */}
-        <div className="relative mt-20 flex justify-center z-0">
-          <div className="relative mx-4 rounded-t-2xl bg-white/40 p-2 pb-0 shadow-2xl backdrop-blur-sm ring-1 ring-white/60">
-            <img
-              src={hero}
-              alt="Dashboard preview"
-              className="w-full max-w-[1100px] rounded-t-xl shadow-sm border-x border-t border-slate-200/60"
-            />
-            <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white via-white to-transparent z-10" />
+              {/* IMAGE CARD */}
+              <div className="
+                relative
+                rounded-2xl
+                bg-white
+                p-2
+                shadow-xl
+                border border-slate-200
+              ">
+                <img
+                  src={hero}
+                  alt="Dashboard preview"
+                  className="w-full max-w-[650px] rounded-xl"
+                />
+              </div>
+            </div>
+
+            {/* LEFT CONTENT — SECOND ON MOBILE */}
+            <div className="order-2 lg:order-1 text-left">
+
+              {/* TRUSTED BY — MATCHING PILL */}
+              <span className="
+                inline-flex
+                items-center
+                rounded-full
+                border border-slate-300/60
+                bg-transparent
+                px-4 py-1.5
+                text-xs
+                font-medium
+                text-slate-600
+              ">
+                Trusted by 500+ Businesses
+              </span>
+
+              {/* HEADING */}
+              <h1 className="
+                mt-6
+                text-4xl md:text-5xl
+                font-semibold
+                tracking-tight
+                leading-[1.15]
+                text-slate-600
+              ">
+                <span className="block">One Platform.</span>
+                <span className="block mt-1 text-blue-600">Infinite</span>
+                <span className="block mt-1">Possibilities.</span>
+              </h1>
+
+              {/* DESCRIPTION */}
+              <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate-500 font-medium">
+                India’s most comprehensive AI-powered ERP ecosystem.
+                10+ industry-specific solutions designed to transform your
+                business operations from day one.
+              </p>
+
+              {/* CTA */}
+              <div className="mt-10 flex items-center gap-5">
+                <button className="
+                  rounded-full bg-blue-600 px-8 py-3
+                  text-[15px] font-semibold text-white
+                  shadow-xl shadow-blue-600/20
+                  hover:bg-blue-700 transition-all
+                ">
+                  Get Free Demo
+                </button>
+
+                <button className="
+                  rounded-full border border-slate-300
+                  px-8 py-3 text-[15px] font-medium
+                  text-slate-600 hover:bg-slate-50
+                  transition-all
+                ">
+                  Explore Solutions
+                </button>
+              </div>
+
+            </div>
+
           </div>
         </div>
       </section>
