@@ -21,41 +21,6 @@ export default function HomeHero() {
             {/* RIGHT IMAGE — FIRST ON MOBILE */}
             <div className="order-1 lg:order-2 relative flex justify-center lg:justify-end">
 
-              {/* FLOATING NOTIFICATION CARD */}
-              <div className="
-                absolute
-                -bottom-8
-                -left-6
-                z-20
-                flex items-center gap-4
-                rounded-2xl
-                bg-white
-                px-5 py-4
-                shadow-2xl
-                border border-slate-200
-              ">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-green-100">
-                  <svg
-                    className="h-5 w-5 text-green-600"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-
-                <div>
-                  <p className="text-sm font-semibold text-slate-800">
-                    New Order Received
-                  </p>
-                  <p className="text-sm text-blue-600">
-                    ₹45,000 from Retail Store
-                  </p>
-                </div>
-              </div>
-
               {/* IMAGE CARD */}
               <div className="
                 relative
